@@ -20,11 +20,15 @@ header, main, nav, footer {
 nav a {
     padding: 15px;
     padding-bottom:4px;
-    font-size: 1.8em;
+    font-size: 26px;
     text-decoration: none;
     color: white;
 
     
+}
+
+a {
+    color: #500e0e;
 }
 
 a:visited {
@@ -33,7 +37,7 @@ a:visited {
 
 nav a:hover {
     border-bottom: 2px orange solid;
-    font-size: 2em;
+    font-size: 36px;
     transition: .9s;
 }
 
@@ -44,6 +48,7 @@ nav a:active {
 main {
     display: flex;
     margin: 10px;
+    margin-left: 50px;
     margin-right: 200px;
 	padding: 20px 0;
     justify-content: space-between;
@@ -55,24 +60,28 @@ table {
 }
 
 td {
-    padding-right: 20px;
-    font-size: 1.3em;
+    padding: 5px;
+    font-size: 16px;
 }
 
-td strong {
+strong {
     color: orange;
 }
 
 #table-header {
-    background-color: #351a00;
+    background-color: #524e4b;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
 }
 
 .table-row {
-    background-color: #753900;
+    background-color: #75716c;
 }
 
-ul {
-    width: 500px;
+table ul {
+    width: auto;
     margin: 0 auto;
     text-align: left;
 }
@@ -81,19 +90,19 @@ ul {
     color: goldenrod;
 }
 
+.codeph {
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
 #contact-content {
     text-align: center;
     padding-left: 200px;
 }
-.container {
-    margin: 50px;
-	padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    text-align:left;
-    flex-flow: row wrap;
 
-}
 
 h1 {
   font-family: "Quantico", sans-serif;
@@ -101,4 +110,43 @@ h1 {
   font-style: normal;
 }
 
+.content {
+    margin: 10px;
+    padding: 20px;
+    background-color: #464646be;
+    border: #500e0e;
+    border-style:double;
+    /* flex-flow: row wrap;  */
+}
 
+.note {
+    /* margin: 10px; */
+    padding: 0px 10px;
+    background-color: #5e3a3abe;
+    border: white;
+    border-style:outset;
+}
+
+.container {
+    /* margin: 50px; */
+	padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align:left;
+    flex-flow: row wrap;
+
+}
+.item {
+		padding: 5px;
+		margin: 10px;
+		background-color: rgba(41, 7, 54, 0.5);
+		text-align: center;
+		font-size: 30px;
+		color: #fff;		
+}
+
+.item img {
+    max-width: 250px;
+    height: auto;
+    display: block;
+}
