@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taylor Farner's Guess the Number Game</title>
+        <meta charset="utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+
+        <header>
+            <h1>Guess the Number!</h1>
+            <h2>Guess a number between 1 and 99 in seven attempts!</h2>
+        </header>
+        <br>
+
+        <div class="content" id="feedback"></div>
+        <div class="container">
+            <div>
+                <!-- <div id="feedback"></div> -->
+                <p>Enter a guess: 
+                <input type="text" id="playerGuess" size="5">
+                         
+                <button id="guessBtn"> Guess </button>
+                <button id="resetBtn"> Reset </button></p>
+                
+                <div><p><em>Guesses</em>: <span id="guesses"></span></p></div>
+                <div><p><em>Remaining Guesses</em>: <span id="remaining"></span></p></div>
+            </div>
+            <div class="item item-win"><strong>Wins</strong>: <br><span id="wins"></span></div>
+            <div class="item item-lose"><strong>Loses</strong>: <br><span id="loses"></span></div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

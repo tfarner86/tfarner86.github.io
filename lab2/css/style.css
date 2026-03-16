@@ -1,0 +1,136 @@
+body {
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+strong {
+    color: goldenrod;
+}
+
+header, main, nav, footer {
+    text-align: center;
+    
+}
+
+
+main {
+    display: flex;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 200px;
+	padding: 20px 0;
+    justify-content: space-between;
+    text-align: left;
+}
+
+
+strong {
+    color: orange;
+}
+
+#table-header {
+    background-color: #524e4b;
+    font-size: 20px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+
+.table-row {
+    background-color: #75716c;
+}
+
+table ul {
+    width: auto;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.hobby {
+    color: goldenrod;
+}
+
+.codeph {
+    font-family: 'Courier New', Courier, monospace;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+h1 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#feedback {
+    font-weight: bold;
+}
+
+em {
+    color: #cf9fff;
+
+}
+
+.content {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    /* background-color: #b1b1b1be;
+    border: #500e0e;
+    border-style:double; */
+    /* flex-flow: row wrap;  */
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #464646be;
+    display: flex;
+    border: #500e0e;
+    border-style:double;
+    justify-content: space-between;
+    flex-flow: row wrap;  
+}
+
+/* .container {
+    margin: 50px;
+	padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align:left;
+    flex-flow: row wrap;
+} */
+
+.item-win {
+		padding: 20px;
+		/* margin: 20px; */
+        background-color: #128d02be;
+        border: #500e0e;
+        border-style:double;
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+        flex-flow: row wrap;  
+}
+
+.item-lose {
+		padding: 20px;
+		/* margin: 20px; */
+        background-color: #b40c0cbe;
+        border: #500e0e;
+        border-style:double;
+		text-align: center;
+		font-size: 30px;
+		color: #fff;
+        flex-flow: row wrap;  
+}
+
+
