@@ -79,7 +79,7 @@ function checkGuess() {
         document.querySelector("#playerGuess").focus();
 
         if(attempts == 7) {
-            feedback.textContent = "Sorry, you lost!";
+            feedback.textContent = "Sorry, you lost! The correct number was: " + randomNumber;
             feedback.style.color = "red";
             loses++;
             document.querySelector("#loses").textContent = loses;

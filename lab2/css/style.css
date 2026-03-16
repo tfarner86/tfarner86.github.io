@@ -17,6 +17,13 @@ header, main, nav, footer {
     
 }
 
+a {
+    color: #500e0e;
+}
+
+a:visited {
+    color: #cf9fff;
+}
 
 main {
     display: flex;
@@ -33,35 +40,7 @@ strong {
     color: orange;
 }
 
-#table-header {
-    background-color: #524e4b;
-    font-size: 20px;
-    font-weight: bold;
-    color: orange;
-    text-align: center;
-}
 
-.table-row {
-    background-color: #75716c;
-}
-
-table ul {
-    width: auto;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.hobby {
-    color: goldenrod;
-}
-
-.codeph {
-    font-family: 'Courier New', Courier, monospace;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings:"wdth" 100;
-}
 
 h1 {
   font-family: "Quantico", sans-serif;
@@ -83,10 +62,6 @@ em {
     padding: 20px;
     text-align: center;
     font-size: 30px;
-    /* background-color: #b1b1b1be;
-    border: #500e0e;
-    border-style:double; */
-    /* flex-flow: row wrap;  */
 }
 
 .container {
@@ -100,18 +75,9 @@ em {
     flex-flow: row wrap;  
 }
 
-/* .container {
-    margin: 50px;
-	padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    text-align:left;
-    flex-flow: row wrap;
-} */
 
 .item-win {
 		padding: 20px;
-		/* margin: 20px; */
         background-color: #128d02be;
         border: #500e0e;
         border-style:double;
@@ -123,7 +89,6 @@ em {
 
 .item-lose {
 		padding: 20px;
-		/* margin: 20px; */
         background-color: #b40c0cbe;
         border: #500e0e;
         border-style:double;
