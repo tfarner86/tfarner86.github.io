@@ -1,0 +1,99 @@
+body {
+    background-color: rgba(31, 68, 236, 0.856);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+strong {
+    color: goldenrod;
+}
+
+header, main, nav, footer {
+    text-align: center;
+    
+}
+
+a {
+    color: #02be02;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
+input{
+    margin: 0 5px;
+}
+
+.form-check {
+  display:block;
+  min-height: 1.5rem;
+  padding-left: 1.5em;
+  margin-bottom: .125rem;
+}
+
+h1 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  background-color: #1000e9;
+
+}
+h2 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 100;
+  font-size: 25px;
+  font-style: normal;
+
+}
+
+#feedback {
+    font-weight: bold;
+}
+
+em {
+    color: #cf9fff;
+
+}
+
+.content {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.container {
+    margin: 20px;
+    /* padding: 20px; */
+    margin-left: 40px;
+    background-color: #02be02;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    flex-flow: column wrap;  
+}
+
+.card {
+		padding: 20px;
+        margin: 10px;
+        background-color: #ffffff;
+        border-style:solid;
+        border-color: #000000;
+        border-radius: 10px;
+		text-align: left;
+		font-size: 20px;
+        font-weight: 400;
+		color: #000000;
+        flex-flow: column wrap;  
+}
+
+img {
+    padding: 10px;
+}
+
+

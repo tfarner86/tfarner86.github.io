@@ -21,8 +21,8 @@ function displayQ4Choices() {
     let q4ChoicesArray = ["Maine", "Rhode Island", "Maryland", "Delaware"];
     q4ChoicesArray = _.shuffle(q4ChoicesArray);
     for (let i=0; i < q4ChoicesArray.length; i++) {
-        document.querySelector("#q4Choices").innerHTML += `<input type="radio" name="q4" id= "${q4ChoicesArray[i]}"
-            value = "${q4ChoicesArray[i]}"> <label for="${q4ChoicesArray[i]}"> ${q4ChoicesArray[i]}</label>`;
+        document.querySelector("#q4Choices").innerHTML += `<div class="form-check"><input type="radio" name="q4" id= "${q4ChoicesArray[i]}"
+            value = "${q4ChoicesArray[i]}"> <label for="${q4ChoicesArray[i]}"> ${q4ChoicesArray[i]}</label></div>`;
     }
 }
 
@@ -30,8 +30,8 @@ function displayQ5Choices() {
     let q5ChoicesArray = ["Kansas", "Missouri", "Oklahoma", "Colorado"];
     q5ChoicesArray = _.shuffle(q5ChoicesArray);
     for (let i=0; i < q5ChoicesArray.length; i++) {
-        document.querySelector("#q5Choices").innerHTML += `<input type="checkbox" name="q5" id= "${q5ChoicesArray[i]}"
-            value = "${q5ChoicesArray[i]}"> <label for="${q5ChoicesArray[i]}"> ${q5ChoicesArray[i]}</label>`;
+        document.querySelector("#q5Choices").innerHTML += `<div class="form-check"><input type="checkbox" name="q5" id= "${q5ChoicesArray[i]}"
+            value = "${q5ChoicesArray[i]}"> <label for="${q5ChoicesArray[i]}"> ${q5ChoicesArray[i]}</label></div>`;
     }
 }
 
@@ -45,8 +45,8 @@ function displayQ9Choices() {
     q9ChoicesArray = _.shuffle(q9ChoicesArray);
     for (let i = 0; i < q9ChoicesArray.length; i++) {
         document.querySelector("#q9Choices").innerHTML += `
-            <input type="checkbox" name="q9" id="${q9ChoicesArray[i].id}" value="${q9ChoicesArray[i].label}">
-            <label for="${q9ChoicesArray[i].id}">${q9ChoicesArray[i].label}</label>
+            <div class="form-check"><input type="checkbox" name="q9" id="${q9ChoicesArray[i].id}" value="${q9ChoicesArray[i].label}">
+            <label for="${q9ChoicesArray[i].id}">${q9ChoicesArray[i].label}</label></div>
         `;
     }
 }
@@ -63,16 +63,12 @@ function isFormValid() {
 }
 
 function rightAnswer(index) {
-    document.querySelector(`#q${index}Feedback`).innerHTML = "Correct!";
-    document.querySelector(`#q${index}Feedback`).className = "bg-success text-white";
-    document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/checkmark.png' alt='Checkmark'>";
+    document.querySelector(`#q${index}Feedback`).innerHTML = "<img src='img/checkmark.png' alt='Checkmark'>" + "Correct!";
     score += 10;
 }
 
 function wrongAnswer(index) {
-    document.querySelector(`#q${index}Feedback`).innerHTML = "Incorrect!";
-    document.querySelector(`#q${index}Feedback`).className = "bg-warning text-white";
-    document.querySelector(`#markImg${index}`).innerHTML = "<img src='img/xmark.png' alt='xmark'>";
+    document.querySelector(`#q${index}Feedback`).innerHTML = "<img src='img/xmark.png' alt='xmark'>" + "Incorrect!";
 }
 
 function gradeQuiz(){
@@ -90,7 +86,6 @@ function gradeQuiz(){
     let q6Response = document.querySelector("#q6").value.toLowerCase();
     let q7Response = document.querySelector("#q7").value.toLowerCase();
     let q8Response = document.querySelector("#q8").value;
-    let q9Response = document.querySelector("input[name=q9]:checked").value;
     let q10Response = document.querySelector("input[name=q10]:checked")?.value || "";
 
 
@@ -193,13 +188,13 @@ function gradeQuiz(){
 
     if(score ==100){
     document.querySelector("#validationFdbk").textContent = "Congratulations! You got all the answers right!";
-    document.querySelector("#validationFdbk").style.color = "#128d02be";
-    document.querySelector("#totalScore").style.color = "#128d02be";
+    document.querySelector("#validationFdbk").style.color = "#02be02";
+    document.querySelector("#totalScore").style.color = "#02be02";
     }
     else if(score >= 80 && score <= 99){
     document.querySelector("#validationFdbk").textContent = "You're almost there!! Over 80 pts!!";
-    document.querySelector("#validationFdbk").style.color = "#128d02be";
-    document.querySelector("#totalScore").style.color = "#128d02be";
+    document.querySelector("#validationFdbk").style.color = "#02be02";
+    document.querySelector("#totalScore").style.color = "#02be02";
     }
     else {
         document.querySelector("#totalScore").style.color = "red";
