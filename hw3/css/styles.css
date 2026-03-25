@@ -1,6 +1,3 @@
-/* styles.css - Cowboy Bebop Red Dragon theme */
-
-/* Optional background image variable */
 :root {
   --bg-image: url('../img/cowboy-bebop-dark-5120x2880-20033.jpg');
   --accent: #ff3b3b;
@@ -8,13 +5,11 @@
   --panel: rgba(8,10,12,0.88);
   --glass: rgba(255,255,255,0.03);
 }
-/* Put this near the top of styles.css */
+
 html, body {
   height: 100%;
 }
 
-
-/* 1 Page background: dark starfield with optional cinematic image */
 body {
   font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   color: #f1f5f9;
@@ -30,7 +25,6 @@ body {
   min-height: 100vh;
 }
 
-/* 2 Film grain overlay for texture */
 body::after {
   content: "";
   pointer-events: none;
@@ -41,14 +35,12 @@ body::after {
   opacity: 0.6;
 }
 
-/* 3 Navbar: deep noir with red accent border */
 .navbar {
   background: linear-gradient(90deg, rgba(6,8,12,0.95), rgba(10,12,16,0.98));
   border-bottom: 3px solid rgba(255,59,59,0.08);
   box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
-/* 4 Brand styling with subtle neon subtitle */
 .navbar-brand {
   color: #fff !important;
   font-weight: 800;
@@ -60,7 +52,6 @@ body::after {
   font-size: 0.9rem;
 }
 
-/* 5 Card panel: glassy cockpit with red highlights */
 .card {
   background: linear-gradient(180deg, rgba(12,14,18,0.8), rgba(8,10,12,0.8));
   border: 1px solid var(--glass);
@@ -69,14 +60,12 @@ body::after {
   overflow: hidden;
 }
 
-/* 6 Card image: cinematic poster frame */
 .card-img-top {
   height: 230px;
   object-fit: cover;
   border-bottom: 6px solid rgba(255,59,59,0.06);
 }
 
-/* 7 Card title link: bold with red hover */
 .card-title a {
   color: #fff;
   text-decoration: none;
@@ -87,7 +76,6 @@ body::after {
   text-decoration: underline;
 }
 
-/* 8 Synopsis styling for readability */
 .anime-synopsis {
   color: #cfd8e3;
   font-size: 0.95rem;
@@ -95,7 +83,6 @@ body::after {
   margin-bottom: 10px;
 }
 
-/* 9 Genre badges: vinyl noir style */
 .genre-badge, .badge {
   background: rgba(255,255,255,0.03);
   color: #f1f5f9;
@@ -107,7 +94,6 @@ body::after {
   border: 1px solid rgba(255,255,255,0.02);
 }
 
-/* 10 Score badge: red-gold accent */
 .badge.bg-success {
   background: linear-gradient(90deg, #ffd27f, var(--accent));
   color: #0b0f14;
@@ -115,7 +101,6 @@ body::after {
   box-shadow: 0 8px 20px rgba(255,59,59,0.10);
 }
 
-/* 11 Buttons styled to match the theme */
 .btn-primary {
   background: linear-gradient(180deg, var(--accent), #b22b2b);
   border: none;
@@ -129,7 +114,6 @@ body::after {
   color: var(--muted);
 }
 
-/* 12 Status alerts with dark glass look */
 .alert {
   background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
   color: #e6eef8;
@@ -137,52 +121,44 @@ body::after {
   border-radius: 8px;
 }
 
-/* 13 Results grid spacing */
 #results {
   margin-top: 14px;
 }
 
-/* 14 Card hover lift with cinematic shadow */
 .card:hover {
   transform: translateY(-10px);
   transition: transform 220ms cubic-bezier(.2,.8,.2,1);
   box-shadow: 0 28px 56px rgba(2,6,12,0.7);
 }
 
-/* 15 Footer styling */
 footer {
   color: var(--muted);
   margin-top: 0;
   padding: 1.25rem 0;
 }
 
-/* 16 Responsive image height tweak */
 @media (max-width: 576px) {
   .card-img-top {
     height: 160px;
   }
 }
 
-/* 17 Modal content for full details */
 .modal-content {
   background: linear-gradient(180deg, rgba(6,8,10,0.98), rgba(4,6,8,0.98));
   color: #e9eef6;
   border: 1px solid rgba(255,255,255,0.03);
 }
 
-/* 18 Focus states for accessibility */
 a:focus, button:focus, input:focus {
   outline: 3px solid rgba(255,59,59,0.18);
   outline-offset: 2px;
 }
 
-/* 19 Small metadata text */
 .small-meta {
   color: var(--muted);
   font-size: 0.85rem;
 }
 
-/* 20 Decorative header ribbon */
 .card-title::after {
   content: "";
   display: block;
