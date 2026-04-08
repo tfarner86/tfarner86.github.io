@@ -137,12 +137,13 @@ h1 {
 
 }
 .item {
-		padding: 5px;
-		margin: 10px;
-		background-color: rgba(41, 7, 54, 0.5);
-		text-align: center;
-		font-size: 30px;
-		color: #fff;		
+    align-self: flex-start;
+    padding: 5px;
+    margin: 10px;
+    background-color: rgba(41, 7, 54, 0.5);
+    text-align: center;
+    font-size: 30px;
+    color: #fff;		
 }
 
 .item img {
